@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Dashboard"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+    android:id="@+id/nav_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    app:headerLayout="@layout/header"
+    app:menu="@menu/menu_main">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Profile_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/d" />
+</com.google.android.material.navigation.NavigationView>
+
+
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    </ScrollView>-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_menu_black_24dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/punch_in"
+            android:layout_width="365dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="27dp"
+            android:background="#000080"
+            android:text="Punch in"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/punch_out"
+            android:layout_width="365dp"
+            android:layout_height="49dp"
+            android:layout_marginBottom="27dp"
+            android:background="#FF0000"
+            android:text="punch Out"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/hedear_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginEnd="72dp"
+            android:layout_marginRight="72dp"
+            android:text="00:00 AM"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/hedear_out"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/hedear_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="48dp"
+            android:text="00:00 PM"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/hedear_in"
+            app:layout_constraintTop_toBottomOf="@+id/pnch_pro_image"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/hedear_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="275dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:text="0h 00 m"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.621"
+            app:layout_constraintStart_toEndOf="@+id/hedear_out"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="11dp"
+            android:text="in"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hedear_in"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/txt_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:text="out"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/hedear_out"
+            app:layout_constraintTop_toBottomOf="@+id/hedear_out"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginTop="11dp"
+            android:text="Total"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/hedear_total"
+            app:layout_constraintStart_toEndOf="@+id/txt_out"
+            app:layout_constraintTop_toBottomOf="@+id/hedear_total"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/header_empid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginRight="92dp"
+            android:layout_marginBottom="11dp"
+            android:text="Emp Id"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_Empid"
+            app:layout_constraintEnd_toStartOf="@+id/heder_Email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_in"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/heder_Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="208dp"
+            android:layout_marginRight="208dp"
+            android:text="Email"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_out"
+            app:layout_constraintTop_toBottomOf="@+id/txt_out"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/txt_Empid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginRight="76dp"
+            android:text="CA00373"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/text_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_empid"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/text_email"
+            android:layout_width="245dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="14dp"
+            android:text="dilshad.ahmad@cloudanalogy.com"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/heder_Email"
+            app:layout_constraintTop_toBottomOf="@+id/heder_Email"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/header_primar_Contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="11dp"
+            android:text="Primary Contact"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Tex_Contact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Empid"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/secContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="232dp"
+            android:layout_marginLeft="232dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginBottom="11dp"
+            android:text="Secoundry Contact"
+            android:textColor="#000080"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/Tex_Contact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Empid"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Tex_Contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginRight="138dp"
+            android:layout_marginBottom="156dp"
+            android:text="9179445408"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/punch_in"
+            app:layout_constraintEnd_toStartOf="@+id/Text_secoundrycontact"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header_primar_Contact"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/Text_secoundrycontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="138dp"
+            android:layout_marginLeft="138dp"
+            android:layout_marginBottom="156dp"
+            android:text="9179445408"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/punch_in"
+            app:layout_constraintStart_toEndOf="@+id/Tex_Contact"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/pnch_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="126dp"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="147dp"
+            android:layout_marginRight="147dp"
+            android:text="Dilshad Ahmad"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="148dp"
+            android:layout_marginLeft="148dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="171dp"
+            android:layout_marginRight="171dp"
+            android:text="Developer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/pnch_username"
+            tools:ignore="MissingConstraints" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pnch_pro_image"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="149dp"
+            android:layout_marginLeft="149dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="178dp"
+            android:layout_marginRight="178dp"
+            android:src="@drawable/d"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/designation"
+            app:layout_editor_absoluteX="163dp"
+            app:layout_editor_absoluteY="142dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

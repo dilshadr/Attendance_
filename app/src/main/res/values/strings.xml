@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name"></string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_user__page">User_Page</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_main_page">Main_page</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cmp_rule">9 Hours Daily is Mandatory for everyone in the Company.\n\n
+Wifi static for Attendance:
+        \n
+        <b>Basement</b>- CA Basement Airtel \n
+        <b>Ground Floor </b>- CA GF \n
+        <b>First Floor</b> - Neo \n
+        <b>Second Floor</b>- Morpheous \n\n
+        Saturday is half-day (those who completed training period) means <b>5hr</b> is mandatory.
+        \n\n
+        If both <b>punch-in and out </b> is missed it will be considered as <b>1 day Leave</b>.
+        \n
+        If <b>punch out</b> is missed it will considered as <b>half-day</b>.\n\n
+        <b>Warning notification </b>through attendance portal will be issued to everyone having low attendance, less working hours and number of leaves.\n\n
+It is mandatory to apply leaves through attendance portal ,if the leaves are not Approved by Team lead within the time frame the team member is not allowed to take leaves.
+It is mandatory to take leave only after approval by TL and HR .Leaves taken without TL and HR approval will be considered unplanned and strict actions will be taken.\n\n
+If anyone working on SUNDAY any team party trip, need to drop formal mail within 1 week (it’s Mandatory) for getting approval from Team Lead and HR,otherwise it will not be considered.
+Informing through skype or verbal communication will not be considered.\n\n
+No attendance bonus.</string>
+
+
+    <string name="rule_Leave">
+        Yearly Leaves = <b>2.5*12=30 + National  Regional Holidays 9</b>.\n\n
+        An employee can take<b>2.5 leaves </b>in a month.\n\n
+        <b>Planned Leaves </b>- Need to apply 2 days prior ,but for long holidays need to apply at-least 1 week before.\n
+        <b>Unplanned Leave </b>- Which is applied on the same day or the day before.\n\n
+        In case of unplanned leave due to health issues ,employee needs to submit the required and relevant documents to <b>Team Leads/ Reporting Manager/ HR </b> for approval.\n\n
+        <b>Monthly Deduction</b> : Deduction on the grounds of more than 1 Unplanned leave.\n
+        <b>Quarterly Deduction</b> : Deduction on the grounds of exceeding 7.5 leaves. Deduction of 3 consecutive months will be done on the 4 month.\n
+        (<b>Ex</b>-deduction of 1st quarter i.e. Jan,Feb and March will be done on April month).\n\n
+
+    Once you have completed 6 months with the company you can take all saturday off which will be considered as leaves for 0.5 each day after approval from authorities.\n\n
+    All the half days will be marked as part of leave and work without pay if increased by 2.5 leaves monthly.\n\n
+    WFH will be issued by the company. No-one is allowed to take self WFH.\n
+    All the WFH will be considered as a person\'s bad performance.This will be tracked down in his attendance.\n\n
+    Unplanned Leaves will lead into project Miss-Management, angry Team Leads and bad appraisals.\n
+    Everyone is advice to take planned leaves and not just ping on whats app or skype that you are not willing to come today because:\n
+        <b>1.</b> You don\'t care about your work and want to enjoy taking leave on a working day.\n
+        <b>2.</b> You want to consume all your planned or unplanned leave because you don\'t care about Bonus or appraisals.\n
+        <b>3.</b> You are willing to risk the project you are working in and land on project less or internal projects forever
+    </string>
+
+
+    <string name="rule_Working_shipt">
+        We will follow the following shifts:\n
+        <b>1st Shift </b> > 10:00AM - 7:00 PM Interns\n
+        <b>2nd Shift</b> > 10:30 AM - 7:30 PM Kubio\n
+        <b>3rd Shift </b>> 1:00 PM - 10:00 PM SalesforceUp\n
+        <b>4th Shift</b> > 3:00 PM - 12:00 AM Sales Shift.\n
+        Team leads or Department Heads can request you to come and work in any shifts mentioned above.\n
+        We have set office timing as Morning 8:00 AM to next day Morning 7:00 AM.\n
+    </string>
+
+
+    <string name="Rule_Sales_Team">
+        <b>1.</b> Sales Team must be working for a time period Shift > 3:00 PM - 12:00 AM Sales Shift. for 9 hrs mandatory.\n
+        <b>2.</b> Leaves causing a lost opportunity must be reviewed as bad performance.\n
+    </string>
+
+
+    <string name="Rule_Interrns">
+        Monday to Saturday are full working days for all Trainees, 9 hrs daily mandatory.\n\n
+        No leaves are allowed during probation period. Leaves during the training period , will be considered as a indiscipline act and will be lead to strict actions.\n\n
+        All Leaves will be Un- Paid leaves. \n\n
+        Attendance will be one of the major criteria for every Intern before giving a permanent offer.\n\n
+    </string>
+
+
+    <string-array name="Leave_Type">
+        <item>Full Day</item>
+        <item>Half Day</item>
+        <item>Multiple Days</item>
+    </string-array>
+
+</resources>

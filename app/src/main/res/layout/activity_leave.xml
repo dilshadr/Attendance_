@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Leave">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBar_Leave"
+        android:background="#007ADD"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tollBar_leave"
+            android:background="#000"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablout_leave"
+            app:tabGravity="fill"
+            app:tabTextColor="@color/white"
+            app:tabIndicatorHeight="1.5dp"
+            app:tabMode="fixed"
+            app:tabIndicatorColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:id="@+id/tabhome"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_home_black_24dp"
+                android:text="Home" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabapply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_create_black_24dp"
+                android:text="Apply"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:text="Status"/>
+
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+      <androidx.viewpager.widget.ViewPager
+          android:id="@+id/viewpager_leave"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

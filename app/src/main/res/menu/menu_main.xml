@@ -1,0 +1,68 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.attendance_app.MainActivity">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/na_Leave"
+            android:icon="@drawable/ic_time_to_leave_black_24dp"
+            android:title="Leave" />
+
+        <item
+            android:id="@+id/nav_Holiday"
+           android:icon="@drawable/ic_time_to_leave_black_24dp"
+            android:title="Holiday" />
+        <item
+            android:id="@+id/nav_Birthday"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Birthday" />
+
+<!--           HR NAVIGATION ITEM             -->
+
+        <item
+            android:visible="false"
+            android:id="@+id/resetid"
+            android:title="Reset Device Id"
+            android:icon="@drawable/ic_phonelink_setup_black_24dp"/>
+        <item
+            android:visible="false"
+            android:id="@+id/empleave"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Employee Leave"/>
+
+<!--             TEAM LEAD NAVIGATION ITEM         -->
+        <item
+            android:id="@+id/myTeam"
+            android:title="My Team"
+            android:visible="false"
+            android:icon="@drawable/ic_people_black_24dp"/>
+    </group>
+
+
+    <item android:title="Profile"
+    android:id="@+id/pid">
+    <menu>
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_reply_black_24dp"
+                android:title="Logout" />
+            <item
+            android:id="@+id/nav_changepws"
+            android:icon="@drawable/ic_reply_black_24dp"
+            android:title="Change password" />
+
+            <item
+                android:id="@+id/cmp_Rule"
+                android:icon="@drawable/ic_reply_black_24dp"
+                android:title="Company Rule" />
+        </group>
+    </menu>
+</item>
+
+</menu>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cmprule_main_activity"
+    tools:context=".Company_Rule">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/tollBar_leave"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@color/navyBlue"-->
+<!--        app:popupTheme="@style/Theme.AppCompat.Light"-->
+<!--        app:titleTextColor="@color/white" />-->
+
+
+    <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+        >
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:textSize="30sp"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:textAlignment="center"
+             android:text="Attendance"
+             android:background="#5e6472"
+             android:textColor="@color/white"
+             android:id="@+id/Title_Attendance"
+             android:gravity="center_horizontal" />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/msgAttendance"
+             android:text="@string/cmp_rule"
+             android:textSize="20sp"
+             android:lineSpacingExtra="5sp"
+             android:padding="16dp"
+             android:layout_below="@+id/Title_Attendance"/>
+         <TextView
+             android:id="@+id/Title_Leaves"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/msgAttendance"
+             android:textSize="30sp"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:background="#5e6472"
+             android:textColor="@color/white"
+             android:text="Leaves"
+             android:textAlignment="center"
+             android:gravity="center_horizontal" />
+
+         <TextView
+             android:id="@+id/msg_Leave"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/Title_Leaves"
+             android:text="@string/rule_Leave"
+             android:textSize="20sp"
+             android:lineSpacingExtra="5sp"
+             android:padding="16dp"/>
+
+         <TextView
+             android:id="@+id/tilte_WorkingShift"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/msg_Leave"
+             android:textSize="30sp"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:background="#5e6472"
+             android:textColor="@color/white"
+             android:text="Working Shift"
+             android:textAlignment="center"
+             android:gravity="center_horizontal"/>
+
+         <TextView
+             android:id="@+id/msg_Workingshift"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/tilte_WorkingShift"
+             android:text="@string/rule_Working_shipt"
+             android:textSize="20sp"
+             android:lineSpacingExtra="5sp"
+             android:padding="16dp"/>
+
+         <TextView
+             android:id="@+id/title_Sales_Team"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/msg_Workingshift"
+             android:textSize="30sp"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:background="#5e6472"
+             android:textColor="@color/white"
+             android:text="Sales Team"
+             android:textAlignment="center"
+             android:gravity="center_horizontal"/>
+
+         <TextView
+             android:id="@+id/msg_sales_Team"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/title_Sales_Team"
+             android:text="@string/Rule_Sales_Team"
+             android:textSize="20sp"
+             android:lineSpacingExtra="5sp"
+             android:padding="16dp"/>
+
+         <TextView
+             android:id="@+id/tilte_Interns"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/msg_sales_Team"
+             android:textSize="30sp"
+             android:textStyle="bold"
+             android:padding="10dp"
+             android:background="#5e6472"
+             android:textColor="@color/white"
+             android:text="Interns"
+             android:textAlignment="center"
+             android:gravity="center_horizontal"/>
+
+         <TextView
+             android:id="@+id/msg_Interns"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@id/tilte_Interns"
+             android:text="@string/Rule_Interrns"
+             android:textSize="20sp"
+             android:lineSpacingExtra="5sp"
+             android:padding="16dp"/>
+
+
+
+
+
+
+     </RelativeLayout>
+ </ScrollView>
+
+</RelativeLayout>
